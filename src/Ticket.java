@@ -1,54 +1,66 @@
-public class Ticket {
+public class Ticket 
+{
     private int ticketId;
     private User user;
     private Train train;
     private int seatBooked;
     private static int counter=1001;
 
-    public Ticket(User user, Train train, int seatBooked) {
+    public Ticket(User user, Train train, int seatBooked) 
+    {
         this.ticketId = counter++;
         this.user = user;
         this.train = train;
         this.seatBooked = seatBooked;
     }
 
-    public int getTicketId() {
+    public int getTicketId() 
+    {
         return ticketId;
     }
 
-    public void setTicketId(int ticketId) {
+    public void setTicketId(int ticketId) 
+    {
         this.ticketId = ticketId;
     }
 
-    public User getUser() {
+    public User getUser() 
+    {
         return user;
     }
 
-    public void setUser(User user) {
+    public void setUser(User user) 
+    {
         this.user = user;
     }
 
-    public Train getTrain() {
+    public Train getTrain() 
+    {
         return train;
     }
 
-    public void setTrain(Train train) {
+    public void setTrain(Train train) 
+    {
         this.train = train;
     }
 
-    public int getSeatBooked() {
+    public int getSeatBooked() 
+    {
         return seatBooked;
     }
 
-    public void setSeatBooked(int seatBooked) {
+    public void setSeatBooked(int seatBooked) 
+    {
         this.seatBooked = seatBooked;
     }
 
-    public static int getCounter() {
+    public static int getCounter() 
+    {
         return counter;
     }
 
-    public static void setCounter(int counter) {
+    public static void setCounter(int counter) 
+    {
         Ticket.counter = counter;
     }
 
